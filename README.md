@@ -7,10 +7,10 @@
 * A ***Mailbox*** provides authentication credentials for API calls to the 
 Inmarsat service, and provides access to an interest group of devices associated 
 with a satellite modem (aka *Mobile*).
-    * A ***Satellite Gateway*** is effectively an API server URL in the cloud 
+    * The ***Satellite Gateway*** is effectively an API server URL in the cloud 
     associated with a network operator (e.g. Inmarsat or ORBCOMM). This is also
     referred to as the *Message Gateway System*.
-    * The API architecture requires the client application to poll to
+    * The API architecture requires the client application to poll a Mailbox to
     receive and send messages.  Polling the API does not consume satellite data.
 
 * A ***Mobile*** is the satellite modem associated with a remote Device or Edge 
@@ -92,17 +92,22 @@ the DC automotive or AC/DC adapter cable provided.
 7. Using your preferred tablet/smartphone/PC, find and connect to the WiFi
 network `isat-feu-device`.  An example using an iOS device is shown below:
 
+    >NOTE: You can use the QR code on the device to automatically connect.
+
     ![iOS attach to device WiFi](media/iphone-ap-connect.png)
 
 8. Open a browser and navigate to `http://isatiot:5000`.  It should appear
 similar to the following iOS/Safari example:
 
-    ![iOS Safari FEU Home page](media/feu-homepage.png)
+    >NOTE: If the `isatiot` hostname does not resolve,
+    try `http://192.168.27.1:5000`
+
+    ![iOS Safari FEU Home page](media/gui-main.png)
 
 9. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
 the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
-    ![iOS Safari IDP page](media/feu-idp-page.png)
+    ![iOS Safari IDP page](media/gui-idp-1.png)
 
 ## Network Data
 
@@ -119,6 +124,10 @@ includes a **modemRegistration** and a location report.
 ![FEU Architecture](media/idpdevkit-arch.png)
 
 ## Next Steps
+
+>NOTE: You can connect the edge device to the Internet on a local WiFi
+connection by navigating to the `WiFi` tab on the web GUI and entering your
+SSID and PSK.
 
 Ensure you have access to the following documentation:
 
