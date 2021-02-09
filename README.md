@@ -1,5 +1,14 @@
 # Inmarsat IsatData Pro Plug-N-Play Developer Kit Quick Start
 
+## Contents
+
+* [System Overview](#System-Overview)
+* [Modem Activation](#Modem-Activation)
+* [Modem Installation](#Modem-Installation)
+* [Network Data](#Network-Data)
+* [Field Edge Ultralite Reference Architecture](#Field-Edge-Ultralite-Reference-Architecture)
+* [Next Steps](#Next-Steps)
+
 ## System Overview
 
 ![System Overview](media/idp-architecture.png)
@@ -30,14 +39,15 @@ The hardware components of the IDP PNP Developer Kit focus on the *Mobile* and
 IoT ***Edge Intelligence*** using a reference architecture developed mainly in
 Python and running on a low cost Raspberry Pi Zero Wireless.
 
+[Back to Top](#Contents)
+
 ## Modem Activation
 
 1. Confirm you have received a **IDP Developer Kit Welcome Email** from
 Inmarsat.  You should also have received login instructions for the Inmarsat
 Solutions IDP Portal (aka *ISIP*).
 
-2. Login to the **Inmarsat Solutions IDP Portal** 
-https://isipinmarsat.satcomhost.com/
+2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)
 
     1. Select **Installed Base > Devices**.
         
@@ -62,6 +72,8 @@ https://isipinmarsat.satcomhost.com/
     completed, within a few minutes.
 
         ![Activation Confirmation Email](media/activation-conf.png)
+
+[Back to Top](#Contents)
 
 ## Modem Installation
 
@@ -109,6 +121,8 @@ the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
     ![iOS Safari IDP page](media/gui-idp-1.png)
 
+[Back to Top](#Contents)
+
 ## Network Data
 
 10. Using the **Inmarsat Solutions IDP Portal** select
@@ -119,9 +133,13 @@ includes a **modemRegistration** and a location report.
 
     ![Network Data](media/network-data.png)
 
+[Back to Top](#Contents)
+
 ## Field Edge Ultralite Reference Architecture
 
 ![FEU Architecture](media/idpdevkit-arch.png)
+
+[Back to Top](#Contents)
 
 ## Next Steps
 
@@ -131,12 +149,24 @@ SSID and PSK.
 
 Ensure you have access to the following documentation:
 
-* **IDP Messaging API** from the [Inmarsat Developer Portal](https://developer.inmarsat.com)
+* **ST2100 Product Documentation** from the [Inmarsat Sharefile](https://inmarsat.sharefile.com/home/shared)
+***IsatData Pro Developer Kit > Modem > Documentation > ST2100***
 
-* **T403 AT Command Reference** from the [Inmarsat Developer Portal](https://developer.inmarsat.com)
+* [**IDP Messaging API**](https://developer.inmarsat.com/technology/idp/idp-messaging-api/idp-messaging-api/)
+on the Inmarsat Developer Portal
 
-Inmarsat also provides the following reference material:
+Inmarsat also provides the following open source reference material:
 
-* **FieldEdge Ultralite IDP Project** on [GitHub](https://github.com/inmarsat-enterprise/feu-idp)
+* [**idpmodem**](https://github.com/inmarsat/idpmodem)
+Python 3.x package on PyPI and GitHub
+
+* [**isatdatapro-api**](https://www.npmjs.com/package/isatdatapro-api)
+Node.js package on NPM
+
+* [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/feu-idp)
+on GitHub
 
 * [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/inmarsat/azure-isatdatapro)
+on GitHub
+
+[Back to Top](#Contents)
