@@ -150,7 +150,8 @@ SSID and PSK.
 Ensure you have access to the following documentation:
 
 * **ST2100 Product Documentation** from the [Inmarsat Sharefile](https://inmarsat.sharefile.com/home/shared)
-***IsatData Pro Developer Kit > Modem > Documentation > ST2100***
+
+    * ***IsatData Pro Developer Kit > Modem > Documentation > ST2100***
 
 * [**IDP Messaging API**](https://developer.inmarsat.com/technology/idp/idp-messaging-api/idp-messaging-api/)
 on the Inmarsat Developer Portal
@@ -158,10 +159,10 @@ on the Inmarsat Developer Portal
 Inmarsat also provides the following open source reference material:
 
 * [**idpmodem**](https://github.com/inmarsat/idpmodem)
-Python 3.x package on PyPI and GitHub
+Python 3.x package on PyPI and GitHub interfacing the modem using AT commands.
 
 * [**isatdatapro-api**](https://www.npmjs.com/package/isatdatapro-api)
-Node.js package on NPM
+Node.js package on NPM interfacing a web client to the network API.
 
 * [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/feu-idp)
 on GitHub
