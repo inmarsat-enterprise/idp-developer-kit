@@ -51,22 +51,22 @@ Solutions IDP Portal (aka *ISIP*).
 
     1. Select **Installed Base > Devices**.
         
-        ![Installed Base > Devices](media/isip-installed-base.png)
+        <img alt="Installed Base > Devices" src="media/isip-installed-base.png" width="75%" height="auto">
 
     2. Click the **Mobile ID** of your ST2100 modem under the **ICCID** column,
     which should be the same as the unique **S/N** identifier on the side of 
     your modem in the format *nnnnnnnnSKYcccc*:
 
-        ![Unique Modem Identifier](media/st2100-label.png)
+        <img alt="Unique Modem Identifier" src="media/st2100-label.png" width="50%" height="auto">
 
     3. Scroll to the bottom of the *Card/Terminal Details* page and click
     **Activate**.
 
     4. Complete the form and click **Activate** at the bottom.
 
-        ![Activation Form](media/isip-activate-1.png)
+        <img alt="Activation Form" src="media/isip-activate-1.png" width="75%" height="auto">
 
-        ![Activation Form 2](media/isip-activate-2.png)
+        <img alt="Activation Form 2" src="media/isip-activate-2.png" width="75%" height="auto">
 
     5. You should receive an email confirmation when the activation has
     completed, within a few minutes.
@@ -106,7 +106,7 @@ network `isat-feu-device`.  An example using an iOS device is shown below:
 
     >NOTE: You can use the QR code on the device to automatically connect.
 
-    ![iOS attach to device WiFi](media/iphone-ap-connect.png)
+    <img alt="iOS attach to device WiFi" src="media/iphone-ap-connect.png" width="50%" height="auto">
 
 8. Open a browser and navigate to `http://isatiot:5000`.  It should appear
 similar to the following iOS/Safari example:
@@ -114,12 +114,12 @@ similar to the following iOS/Safari example:
     >NOTE: If the `isatiot` hostname does not resolve,
     try `http://192.168.27.1:5000`
 
-    ![iOS Safari FEU Home page](media/gui-main.png)
+    <img alt="iOS Safari FEU Home page" src="media/gui-main.png" width="50%" height="auto">
 
 9. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
 the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
-    ![iOS Safari IDP page](media/gui-idp-1.png)
+    <img alt="[iOS Safari IDP page]" src="media/gui-idp-1.png" width="50%" height="auto">
 
 [Back to Top](#Contents)
 
