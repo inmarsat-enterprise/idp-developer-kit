@@ -171,7 +171,7 @@ Node.js package on NPM interfacing a web client to the network API.
 * [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/feu-idp)
 on GitHub
 
-* [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/inmarsat/azure-isatdatapro)
+* [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/Inmarsat/isatdatapro-azure)
 on GitHub
 
 [Back to Top](#Contents)
