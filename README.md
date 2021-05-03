@@ -48,6 +48,8 @@ Python and running on a low cost Raspberry Pi Zero Wireless.
 Inmarsat.  You should also have received login instructions for the Inmarsat
 Solutions IDP Portal (aka *ISIP*).
 
+
+
 2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)
 
     1. Select **Installed Base > Devices**.
@@ -63,7 +65,7 @@ Solutions IDP Portal (aka *ISIP*).
     3. Scroll to the bottom of the *Card/Terminal Details* page and click
     **Activate**.
 
-    4. Complete the form and click **Activate** at the bottom.
+    4. Complete the form by selecting the price plan from the drop down menu and click **Activate** at the bottom.
 
         <img alt="Activation Form" src="media/isip-activate-1.png" width="75%" height="auto">
 
@@ -72,14 +74,14 @@ Solutions IDP Portal (aka *ISIP*).
     5. You should receive an email confirmation when the activation has
     completed, within a few minutes.
 
-        ![Activation Confirmation Email](media/activation-conf.png)
+        <img alt="Activation Email" src="media/activation-email.png" width="75%" height="auto">
 
 [Back to Top](#Contents)
 
 ## Modem Installation
 
 3. Place the **ST2100** modem in a location with a clear view of the sky
-in the diretion of the Equator (e.g. south-facing in the northern hemisphere).
+in the direction of the Equator (e.g. south-facing in the northern hemisphere).
 You may use the magnet kit provided in the kit to attach it to a vehicle:
 
     ![ST2100 vehicle installation](media/vehicle-install.png)
@@ -126,7 +128,7 @@ the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
 ## Network Data
 
-10. Using the **Inmarsat Solutions IDP Portal** select
+10. Using the **Inmarsat Solutions IDP Portal** (aka ISIP) select
 **IDP Management > Terminals** then click your Mobile ID from the list.
 
 11. You should see a list of **Return Messages** (aka *Mobile-Originated*) that
@@ -168,7 +170,7 @@ Node.js package on NPM interfacing a web client to the network API.
 * [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/feu-idp)
 on GitHub
 
-* [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/inmarsat/azure-isatdatapro)
+* [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/Inmarsat/isatdatapro-azure)
 on GitHub
 
 [Back to Top](#Contents)
