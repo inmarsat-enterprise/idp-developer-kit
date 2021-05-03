@@ -8,6 +8,7 @@
 * [Network Data](#Network-Data)
 * [Field Edge Ultralite Reference Architecture](#Field-Edge-Ultralite-Reference-Architecture)
 * [Next Steps](#Next-Steps)
+* [Troubleshooting](#Troubleshooting)
 
 ## System Overview
 
@@ -171,3 +172,63 @@ on GitHub
 on GitHub
 
 [Back to Top](#Contents)
+
+## Troubleshooting
+
+The following section includes information on known/observed behaviours of
+the developer kit *Ultralite* platform.
+
+### Upgrade to the latest app versions
+
+> NOTE: for this step you will need a [GitHub Personal Access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+You will also need access privileges to the [FieldEdge Ultralite repository](https://github.com/inmarsat-enterprise/fieldedge-ultralite).
+If you do not have repository access, contact enterprisessales@inmarsat.com.
+
+Connect to the Pi using SSH either over WiFi or locally using a USB adapter
+connected to the `**USB**` port (*NOT* the PWR port).
+
+From the main directory when you login, enter the following:
+
+```
+export GITHUB_TOKEN=<YourPersonalAccessToken>
+docker-compose --build -d
+```
+
+### Cannot connect to `isat-feu-device` access point
+
+`feuwifi` sometimes will refuse an access point connection with a
+**bad password** error.
+This is a known issue with the community-developed tool.
+
+First try removing and re-applying power from the FEU device, a reboot will
+usually fix the problem.
+
+If you still cannot attach to `isat-feu-device` you can try removing the
+cover of the FEU edge device and connecting a micro-USB to USB adapter to
+your computer and ssh locally using a terminal shell or a Windows application
+such as [PuTTY](www.putty.org).
+
+```
+ssh-keygen -R "isatiot.local"
+
+ssh pi@isatiot.local
+```
+
+>Note: On some Linux hosts you may need to lookup the MAC address using
+`ifconfig` then use network-manager on the **Ethernet** Wired connection 
+number with matching address and select IPv4 method as `Link-Local Only`.
+
+### After clicking `Connect` to WiFi network page unresponsive
+
+Sometimes the `feuwifi` connection as a Client to an upstream WiFi network
+will cause localhost resolution to be lost, and you may need to connect
+remotely to the FEU device to use the GUI when it is on a WiFi network.
+This is a known issue with the community-developed tool.
+
+After clicking **Connect** on the GUI WiFi tab if you have input correct
+SSID and PSK credentials, you may need to switch WiFi networks from
+`isat-feu-idp` to your local WiFi network then navigate to
+http://isatiot:5000 to reconnect to the GUI.
+
+Rebooting the FEU device usually also allows re-connection via the
+`isat-feu-device` network.
