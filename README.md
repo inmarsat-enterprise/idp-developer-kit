@@ -193,7 +193,7 @@ From the main directory when you login, enter the following:
 
 ```
 export GITHUB_TOKEN=<YourPersonalAccessToken>
-docker-compose --build -d
+docker-compose up -d --build
 ```
 
 ### Cannot connect to `isat-feu-device` access point
