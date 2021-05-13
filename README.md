@@ -49,7 +49,7 @@ Python and running on a low cost Raspberry Pi Zero Wireless.
 Inmarsat.  You should also have received login instructions for the Inmarsat
 Solutions IDP Portal (aka *ISIP*).
 
-
+    <img alt="ASP Welcome Email" src="media/ASP Welcome Email.jpg" width="75%" height="auto">
 
 2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)
 
