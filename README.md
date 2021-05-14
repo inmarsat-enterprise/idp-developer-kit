@@ -80,7 +80,7 @@ Solutions IDP Portal (aka *ISIP*).
 
 ## Modem Installation
 
-3. Place the **ST2100** modem in a location with a clear view of the sky
+1. Place the **ST2100** modem in a location with a clear view of the sky
 in the direction of the Equator (e.g. south-facing in the northern hemisphere).
 You may use the magnet kit provided in the kit to attach it to a vehicle:
 
@@ -90,21 +90,21 @@ You may use the magnet kit provided in the kit to attach it to a vehicle:
     the metal connector damaging vehicle paint, it is recommended to wrap
     the metal connection point in waterproof tape.
 
-4. Connect the **ST2100** to the **Field Edge Ultralite** device directly or
+2. Connect the **ST2100** to the **Field Edge Ultralite** device directly or
 using the extension cables provided.
 
     ![ST2100 connected to Field Edge Ultralite](media/connection-1.png)
 
-5. Connect the **developer breakout cable** to the **Edge Ultralite** device.
+3. Connect the **developer breakout cable** to the **Edge Ultralite** device.
 
     ![Field Edge Ultralite connected to developer and power cable](media/connection-2.png)
 
-6. Connect the **developer breakout cable** to a power source using either
+4. Connect the **developer breakout cable** to a power source using either
 the DC automotive or AC/DC adapter cable provided.
 
     ![Breakout cable](media/breakout-cable.png)
 
-7. Using your preferred tablet/smartphone/PC, find and connect to the WiFi
+5. Using your preferred tablet/smartphone/PC, find and connect to the WiFi
 network `isat-feu-device`.  The SSID password is: IsatIoT1! 
     
     An example using an iOS device is shown below:
@@ -113,7 +113,7 @@ network `isat-feu-device`.  The SSID password is: IsatIoT1!
 
     <img alt="iOS attach to device WiFi" src="media/iphone-ap-connect.png" width="50%" height="auto">
 
-8. Open a browser and navigate to `http://isatiot:5000`.  It should appear
+6. Open a browser and navigate to `http://isatiot:5000`.  It should appear
 similar to the following iOS/Safari example:
 
     >NOTE: If the `isatiot` hostname does not resolve,
@@ -121,7 +121,7 @@ similar to the following iOS/Safari example:
 
     <img alt="iOS Safari FEU Home page" src="media/gui-main.png" width="50%" height="auto">
 
-9. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
+7. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
 the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
     <img alt="[iOS Safari IDP page]" src="media/gui-idp-1.png" width="50%" height="auto">
@@ -130,10 +130,10 @@ the ST2100 modem.  It should appear similar to the following iOS/Safari example:
 
 ## Network Data
 
-10. Using the **Inmarsat Solutions IDP Portal** (aka ISIP) select
+1. Using the **Inmarsat Solutions IDP Portal** (aka ISIP) select
 **IDP Management > Terminals** then click your Mobile ID from the list.
 
-11. You should see a list of **Return Messages** (aka *Mobile-Originated*) that
+2. You should see a list of **Return Messages** (aka *Mobile-Originated*) that
 includes a **modemRegistration** and a location report.
 
     ![Network Data](media/network-data.png)
