@@ -31,10 +31,10 @@ various configuration (e.g. low power mode) and telemetry (e.g. SNR) metadata.
 * A ***Message*** contains the data payload sent over the satellite link in a 
 given direction:
   * ***Return*** messages (aka Mobile-Originated) are sent from the modem 
-  such as telemetry, properties, metadata
+  such as telemetry, properties, metadata. The maximum return message size is 6400 Bytes.
   * ***Forward*** messages (aka Mobile-Terminated) are sent to the modem such 
   as commands or configuration and have corresponding ***Status*** to indicate 
-  state and reason for the state
+  state and reason for the state. The maximum forward message size is 10kBytes, or 5000 Bytes if using low power mode.
 
 The hardware components of the IDP PNP Developer Kit focus on the *Mobile* and
 IoT ***Edge Intelligence*** using a reference architecture developed mainly in
