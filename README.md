@@ -25,7 +25,7 @@ with a satellite modem (aka *Mobile*).
 
 * A ***Mobile*** is the satellite modem associated with a remote Device or Edge 
 Gateway, identified by a globally unique *Mobile ID*.  The Mobile could also be 
-considered a leaf device in that it includes location services (GNSS) and 
+considered as a data source that includes location services (GNSS) and 
 various configuration (e.g. low power mode) and telemetry (e.g. SNR) metadata.
 
 * A ***Message*** contains the data payload sent over the satellite link in a 
