@@ -169,7 +169,7 @@ Python 3.x package on PyPI and GitHub interfacing the modem using AT commands.
 * [**isatdatapro-api**](https://www.npmjs.com/package/isatdatapro-api)
 Node.js package on NPM interfacing a web client to the network API.
 
-* [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/feu-idp)
+* [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/fieldedge-ultralite)
 on GitHub
 
 * [**Azure IoT Satellite Messaging Reference Architecture**](https://github.com/Inmarsat/isatdatapro-azure)
