@@ -152,14 +152,14 @@ includes a **modemRegistration** and a location report.
 connection by navigating to the `WiFi` tab on the web GUI and entering your
 SSID and PSK. This is useful in order to ssh directly into the Pi0W from your PC. You can then carry out upgrades to the latest app versions, see 'Troubleshooting' section below for more detail.
 
-Ensure you have access to the following documentation:
+Ensure you have access to the following documentation: (right click links to open in a new tab)
 
 * **ST2100 Product Documentation** from the [Inmarsat Sharefile](https://inmarsat.sharefile.com/home/shared)
 
     * ***IsatData Pro Developer Kit > Modem > Documentation > ST2100***
 
 * [**IDP Messaging API**](https://developer.inmarsat.com/technology/idp/idp-messaging-api/idp-messaging-api/)
-on the Inmarsat Developer Portal
+on the Inmarsat Developer Portal 
 
 Inmarsat also provides the following open source reference material:
 
