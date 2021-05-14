@@ -150,7 +150,7 @@ includes a **modemRegistration** and a location report.
 
 >NOTE: You can connect the edge device to the Internet on a local WiFi
 connection by navigating to the `WiFi` tab on the web GUI and entering your
-SSID and PSK.
+SSID and PSK. This is useful in order to ssh directly into the Pi0W from your PC. You can then carry out upgrades to the latest app versions, see 'Troubleshooting' section below for more detail.
 
 Ensure you have access to the following documentation:
 
