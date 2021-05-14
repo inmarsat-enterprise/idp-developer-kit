@@ -65,7 +65,7 @@ Solutions IDP Portal (aka *ISIP*).
     3. Scroll to the bottom of the *Card/Terminal Details* page and click
     **Activate**.
 
-    4. Complete the form by selecting the price plan from the drop down menu and click **Activate** at the bottom.
+    4. Complete the form by selecting the price plan from the drop down menu and click **Confirm** at the bottom.
 
         <img alt="Activation Form" src="media/isip-activate-1.png" width="75%" height="auto">
 
