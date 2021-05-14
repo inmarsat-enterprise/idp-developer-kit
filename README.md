@@ -50,7 +50,7 @@ Solutions IDP Portal (aka *ISIP*).
 
     <img alt="ASP Welcome Email" src="media/ASP Welcome Email.jpg" width="75%" height="auto">
 
-2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)
+2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)  (Right click to open link in a new tab)
 
     1. Select **Installed Base > Devices**.
         
@@ -62,16 +62,16 @@ Solutions IDP Portal (aka *ISIP*).
 
         <img alt="Unique Modem Identifier" src="media/st2100-label.png" width="50%" height="auto">
 
-    3. Scroll to the bottom of the *Card/Terminal Details* page and click
+    1. Scroll to the bottom of the *Card/Terminal Details* page and click
     **Activate**.
 
-    4. Complete the form by selecting the price plan from the drop down menu and click **Confirm** at the bottom.
+    1. Complete the form by selecting the price plan from the drop down menu and click **Confirm** at the bottom.
 
         <img alt="Activation Form" src="media/isip-activate-1.png" width="75%" height="auto">
 
         <img alt="Activation Form 2" src="media/isip-activate-2.png" width="75%" height="auto">
 
-    5. You should receive an email confirmation when the activation has
+    2. You should receive an email confirmation when the activation has
     completed, within a few minutes.
 
         <img alt="Activation Email" src="media/activation-email.png" width="75%" height="auto">
