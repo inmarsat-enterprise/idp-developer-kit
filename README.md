@@ -105,7 +105,9 @@ the DC automotive or AC/DC adapter cable provided.
     ![Breakout cable](media/breakout-cable.png)
 
 7. Using your preferred tablet/smartphone/PC, find and connect to the WiFi
-network `isat-feu-device`.  An example using an iOS device is shown below:
+network `isat-feu-device`.  The SSID password is: IsatIoT1! 
+    
+    An example using an iOS device is shown below:
 
     >NOTE: You can use the QR code on the device to automatically connect.
 
