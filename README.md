@@ -242,8 +242,8 @@ usually fix the problem.
 
 If you still cannot attach to `isat-feu-device` you can try removing the
 cover of the FEU edge device and connecting a micro-USB to USB adapter to
-your computer and ssh locally using a terminal shell or a Windows application
-such as [PuTTY](www.putty.org).
+between the Raspberry Pi and your computer to ssh locally using a terminal shell
+or a Windows application such as [PuTTY](www.putty.org).
 
 ```
 ssh-keygen -R "isatiot.local"
@@ -255,7 +255,7 @@ ssh pi@isatiot.local
 `ifconfig` then use network-manager on the **Ethernet** Wired connection 
 number with matching address and select IPv4 method as `Link-Local Only`.
 
-### After clicking `Connect` to WiFi network page unresponsive
+### WiFi network page unresponsive after clicking `Connect`
 
 Sometimes the `feuwifi` connection as a Client to an upstream WiFi network
 will cause localhost resolution to be lost, and you may need to connect
