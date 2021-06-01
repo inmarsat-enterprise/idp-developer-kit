@@ -80,11 +80,32 @@ Solutions IDP Portal (aka *ISIP*).
 
 ## Modem Installation
 
+### Vehicle Installation
+
+1. Collect the parts of the kit required for a vehicle install.
+
+    <img alt="Vehicle Installation Kit" src="media/mobile-kit.png" width="75%" height="auto">
+
+    1. Magnet mount kit
+    2. ST2100 modem
+    3. (Optional) extension cable(s)
+    4. FieldEdge Ultralite "black box"
+    5. ST2100 development cable
+    6. DC automotive power adapter
+
+2. Attach the magnet mount kit to the ST2100 using the screws provided.  You can route the cable out the long or short side using the provided channel.
+
+    <img alt="Magnet Mount Kit" src="media/magmount.png" width="45%" height="auto">
+    <img alt="Magnet Mount installed" src="media/magmount-installed.png" width="45%" height="auto">
+
+3. Connect the ST2100 to either the extension cable(s) or directly to the "black box" cable depending the length of cable run you need.
+
+    <img alt="Modem to cable" src="media/modem-to-cable.png" width="45%" height="auto">
+
+
 1. Place the **ST2100** modem in a location with a clear view of the sky
 in the direction of the Equator (e.g. south-facing in the northern hemisphere).
 You may use the magnet kit provided in the kit to attach it to a vehicle:
-
-    ![ST2100 vehicle installation](media/vehicle-install.png)
 
     >Note: If using for an extended period outdoors and/or to protect against
     the metal connector damaging vehicle paint, it is recommended to wrap
@@ -93,7 +114,7 @@ You may use the magnet kit provided in the kit to attach it to a vehicle:
 2. Connect the **ST2100** to the **Field Edge Ultralite** device directly or
 using the extension cables provided.
 
-    ![ST2100 connected to Field Edge Ultralite](media/connection-1.png)
+    <img alt="Activation Email" src="media/mobile-kit.png" width="75%" height="auto">
 
 3. Connect the **developer breakout cable** to the **Edge Ultralite** device.
 
