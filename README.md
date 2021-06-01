@@ -136,7 +136,7 @@ The SSID password is: ***IsatIoT1!***
 
     >NOTE: You can use the QR code on the device to automatically connect.
 
-    <img alt="QR code" src="media/qr-code.png" width="45%" height="auto">
+    <img alt="QR code" src="media/wifi-qr-code.png" width="45%" height="auto">
     <img alt="iOS attach to device WiFi" src="media/iphone-ap-connect.png" width="45%" height="auto">
 
 6. Open a browser and navigate to `http://isatiot:5000`.  It should appear
