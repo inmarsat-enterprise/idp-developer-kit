@@ -31,10 +31,12 @@ various configuration (e.g. low power mode) and telemetry (e.g. SNR) metadata.
 * A ***Message*** contains the data payload sent over the satellite link in a 
 given direction:
   * ***Return*** messages (aka Mobile-Originated) are sent from the modem 
-  such as telemetry, properties, metadata. The maximum return message size is 6400 Bytes.
+  such as telemetry, properties, metadata. The maximum return message size is
+  6400 Bytes.
   * ***Forward*** messages (aka Mobile-Terminated) are sent to the modem such 
   as commands or configuration and have corresponding ***Status*** to indicate 
-  state and reason for the state. The maximum forward message size is 10kBytes, or 5000 Bytes if using low power mode.
+  state and reason for the state. The maximum forward message size is 10kBytes,
+  or 5000 Bytes if using low power mode.
 
 The hardware components of the IDP PNP Developer Kit focus on the *Mobile* and
 IoT ***Edge Intelligence*** using a reference architecture developed mainly in
@@ -50,7 +52,7 @@ Solutions IDP Portal (aka *ISIP*).
 
     <img alt="ASP Welcome Email" src="media/ASP Welcome Email.jpg" width="75%" height="auto">
 
-2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)  (Right click to open link in a new tab)
+2. Login to the [**Inmarsat Solutions IDP Portal**](https://isipinmarsat.satcomhost.com/)
 
     1. Select **Installed Base > Devices**.
         
@@ -65,7 +67,8 @@ Solutions IDP Portal (aka *ISIP*).
     1. Scroll to the bottom of the *Card/Terminal Details* page and click
     **Activate**.
 
-    1. Complete the form by selecting the price plan from the drop down menu and click **Confirm** at the bottom.
+    1. Complete the form by selecting the price plan from the drop down menu and
+    click **Confirm** at the bottom.
 
         <img alt="Activation Form" src="media/isip-activate-1.png" width="75%" height="auto">
 
@@ -93,46 +96,48 @@ Solutions IDP Portal (aka *ISIP*).
     5. ST2100 development cable
     6. DC automotive power adapter
 
-2. Attach the magnet mount kit to the ST2100 using the screws provided.  You can route the cable out the long or short side using the provided channel.
+2. Attach the magnet mount kit to the ST2100 using the screws provided.
+You can route the cable out the long or short side using the provided channel.
 
-    <img alt="Magnet Mount Kit" src="media/magmount.png" width="45%" height="auto">
+    <img alt="Magnet Mount Kit" src="media/magmount.png" width="36%" height="auto">
     <img alt="Magnet Mount installed" src="media/magmount-installed.png" width="45%" height="auto">
 
-3. Connect the ST2100 to either the extension cable(s) or directly to the "black box" cable depending the length of cable run you need.
+3. Connect the ST2100 to either the extension cable(s) or directly to the
+"black box" cable depending the total length of cable run you need.
 
     <img alt="Modem to cable" src="media/modem-to-cable.png" width="45%" height="auto">
-
-
-1. Place the **ST2100** modem in a location with a clear view of the sky
-in the direction of the Equator (e.g. south-facing in the northern hemisphere).
-You may use the magnet kit provided in the kit to attach it to a vehicle:
 
     >Note: If using for an extended period outdoors and/or to protect against
     the metal connector damaging vehicle paint, it is recommended to wrap
     the metal connection point in waterproof tape.
 
-2. Connect the **ST2100** to the **Field Edge Ultralite** device directly or
-using the extension cables provided.
+    <img alt="Waterproof tape" src="media/connector-tape.png" width="31%" height="auto">
+    <img alt="Taped connector" src="media/teminal-water-scratch-resist.png" width="45%" height="auto">
 
-    <img alt="Activation Email" src="media/mobile-kit.png" width="75%" height="auto">
+4. Place the **ST2100** modem in a location with a clear view of the sky
+in the direction of the Equator (e.g. south-facing in the northern hemisphere).
+Ensure your cabling can run without being damaged.
 
-3. Connect the **developer breakout cable** to the **Edge Ultralite** device.
+    <img alt="Install location" src="media/terminal-vehicle-roof.png" width="45%" height="auto">
+    <img alt="Cable routing" src="media/vehicle-seam.png" width="45%" height="auto">
 
-    ![Field Edge Ultralite connected to developer and power cable](media/connection-2.png)
+5. Connect the **developer breakout cable** to the **Edge Ultralite** "black
+box" device and the **developer breakout cable** to a power source using either
+the DC automotive or AC/DC adapter cable provided
 
-4. Connect the **developer breakout cable** to a power source using either
-the DC automotive or AC/DC adapter cable provided.
+    <img alt="Breakout cable" src="media/breakout-cable.png" width="45%" height="auto">
+    <img alt="Vehicle power" src="media/vehicle-power.png" width="45%" height="auto">
 
-    ![Breakout cable](media/breakout-cable.png)
-
-5. Using your preferred tablet/smartphone/PC, find and connect to the WiFi
-network `isat-feu-device`.  The SSID password is: IsatIoT1! 
+6. Using your preferred tablet/smartphone/PC, use the QR code or find and
+connect to the WiFi network `isat-feu-device`.
+The SSID password is: ***IsatIoT1!*** 
     
     An example using an iOS device is shown below:
 
     >NOTE: You can use the QR code on the device to automatically connect.
 
-    <img alt="iOS attach to device WiFi" src="media/iphone-ap-connect.png" width="50%" height="auto">
+    <img alt="QR code" src="media/qr-code.png" width="45%" height="auto">
+    <img alt="iOS attach to device WiFi" src="media/iphone-ap-connect.png" width="45%" height="auto">
 
 6. Open a browser and navigate to `http://isatiot:5000`.  It should appear
 similar to the following iOS/Safari example:
@@ -171,7 +176,9 @@ includes a **modemRegistration** and a location report.
 
 >NOTE: You can connect the edge device to the Internet on a local WiFi
 connection by navigating to the `WiFi` tab on the web GUI and entering your
-SSID and PSK. This is useful in order to ssh directly into the Pi0W from your PC. You can then carry out upgrades to the latest app versions, see 'Troubleshooting' section below for more detail.
+SSID and PSK. This is useful in order to ssh directly into the Pi0W from your
+PC. You can then carry out upgrades to the latest app versions, see
+*Troubleshooting* section below for more detail.
 
 Ensure you have access to the following documentation: (right click links to open in a new tab)
 
