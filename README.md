@@ -182,9 +182,10 @@ PC. You can then carry out upgrades to the latest app versions, see
 
 Ensure you have access to the following documentation: (right click links to open in a new tab)
 
-* **ST2100 Product Documentation** from the [Inmarsat Sharefile](https://inmarsat.sharefile.com/home/shared)
-
-    * ***IsatData Pro Developer Kit > Modem > Documentation > ST2100***
+* **ST2100 Product Documentation** from the [Documentation Repository](https://github.com/inmarsat-enterprise/idp-developer-kit-nda)
+    
+    > Note: if you cannot access the repository, contact
+    enterprisesales@inmarsat.com to be added as a collaborator.
 
 * [**IDP Messaging API**](https://developer.inmarsat.com/technology/idp/idp-messaging-api/idp-messaging-api/)
 on the Inmarsat Developer Portal 
