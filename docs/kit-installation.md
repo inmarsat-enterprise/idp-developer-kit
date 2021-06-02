@@ -45,32 +45,5 @@ the DC automotive or AC/DC adapter cable provided
     <img alt="Breakout cable" src="../media/breakout-cable.png" width="45%" height="auto">
     <img alt="Vehicle power" src="../media/vehicle-power.png" width="45%" height="auto">
 
-6. Using your preferred tablet/smartphone/PC, use the QR code or find and
-connect to the WiFi network `isat-feu-device`.
-The SSID password is: ***IsatIoT1!*** 
-    
-    An example using an iOS device is shown below:
-
-    >NOTE: You can use the QR code on the device to automatically connect.
-
-    <img alt="QR code" src="../media/wifi-qr-code.png" width="45%" height="auto">
-    <img alt="iOS attach to device WiFi" src="../media/iphone-ap-connect.png" width="45%" height="auto">
-
-> NOTE: If you cannot establish a connection to `isat-fe-device` try removing
-and re-applying power to the "black box".
-See [troubleshooting](#Cannot-connect-to-`isat-feu-device`-access-point).
-
-7. Open a browser and navigate to `http://isatiot:5000`.  It should appear
-similar to the following iOS/Safari example:
-
-    >NOTE: If the `isatiot` hostname does not resolve,
-    try `http://192.168.27.1:5000`
-
-    <img alt="iOS Safari FEU Home page" src="../media/gui-main.png" width="50%" height="auto">
-
-8. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
-the ST2100 modem.  It should appear similar to the following iOS/Safari example:
-
-    <img alt="[iOS Safari IDP page]" src="../media/gui-idp-1.png" width="50%" height="auto">
-
+[Login to the edge device](./using-fieldedge-ultralite.md#How-to-connect-to-the-Human-Machine-Interface) or
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)

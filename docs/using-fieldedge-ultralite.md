@@ -154,7 +154,7 @@ ssh pi@isatiot.local
 `ifconfig` then use network-manager on the **Ethernet** Wired connection 
 number with matching address and select IPv4 method as `Link-Local Only`.
 
-[Return to top](#Contents)
+[Return to top](#Contents) or [Return to Installation](./kit-installation.md)
 
 ### WiFi network page unresponsive after clicking `Connect`
 

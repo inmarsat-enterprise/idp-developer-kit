@@ -28,8 +28,8 @@ straight to [Modem Activation](docs/modem-activation.md) then
 * [System Overview](docs/system-overview.md)
 * [Modem Activation](docs/modem-activation.md)
 * [Kit Installation](docs/kit-installation.md)
-* [Network Data](docs/Network-Data.md)
-* [Field Edge Ultralite Reference Architecture](docs/using-fieldedge-ultralite)
+* [Network Data](docs/network-data.md)
+* [Field Edge Ultralite Reference Architecture](docs/using-fieldedge-ultralite.md)
 * [Next Steps](#Next-Steps)
 
 ## Next Steps
