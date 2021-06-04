@@ -30,4 +30,14 @@ The hardware components of the IDP PNP Developer Kit focus on the *Mobile* and
 IoT ***Edge Intelligence*** using a reference architecture developed mainly in
 Python and running on a low cost Raspberry Pi Zero Wireless.
 
+## Global Coverage
+
+IsatData Pro is a global service offered on Inmarsat's geostationary L-band
+satellites.
+
+![IDP coverage](../media/isat-data-pro-coverage.jpg)
+
+>NOTE: Some countries may require special licensing to offer service, you
+can find out more by contacting your local Inmarsat or partner representative.
+
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)
