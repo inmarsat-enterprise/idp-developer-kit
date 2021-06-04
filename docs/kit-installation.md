@@ -1,5 +1,12 @@
 ## IDP Developer Kit Installation
 
+>NOTE: The "black box" element of the kit is provided for your convenience to
+quickly generate sample data and give you a sense of *art of the possible*.
+If you just want to connect your own PC or microcontroller to the ST2100 you
+can simply remove the black box from the wiring path and connect directly from
+the developer breakout cable to the ST2100, using the extension cable(s) if
+necessary.
+
 ### Vehicle Installation
 
 1. Collect the parts of the kit required for a vehicle install.
