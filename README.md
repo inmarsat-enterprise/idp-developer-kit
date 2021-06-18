@@ -29,19 +29,19 @@ straight to [Modem Activation](docs/modem-activation.md) then
 * [Modem Activation](docs/modem-activation.md)
 * [Kit Installation](docs/kit-installation.md)
 * [Network Data](docs/network-data.md)
-* [Field Edge Ultralite Reference Architecture](docs/using-fieldedge-ultralite.md)
+* [Using the Sample Application](docs/using-fieldedge-ultralite.md)
 * [Next Steps](#Next-Steps)
 
 ## Next Steps
 
 Ensure you have access to the following documentation: (right click links to open in a new tab)
 
-* [**ST2100 Product Documentation**](https://github.com/inmarsat-enterprise/idp-developer-kit-nda) on our private GitHub repository.
+* [**Modem Integration Documentation**](https://github.com/inmarsat-enterprise/idp-developer-kit-nda) on our private GitHub repository.
     
 * [**IDP Messaging API**](https://developer.inmarsat.com/technology/idp/idp-messaging-api/idp-messaging-api/)
 on the Inmarsat Developer Portal.
 
-* [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/fieldedge-ultralite)
+* *(Optional)* [**FieldEdge Ultralite IDP Project**](https://github.com/inmarsat-enterprise/fieldedge-ultralite)
 on our private GitHub repository.
 
     > Note: if you cannot access the above repositories, contact

@@ -4,8 +4,10 @@
 ST2100 modem. You can connect directly to the modem using the Developer
 Breakout cable and extension cables.
 
-**FieldEdge *Ultralite*** is an open-source project developed by Inmarsat to
-illustrate some key concepts of designing satellite-enabled IoT applications.
+**FieldEdge *Ultralite*** is an
+[open-source project](https://github.com/inmarsat-enterprise/fieldedge-ultralite)
+developed by Inmarsat to illustrate some key concepts of designing
+satellite-enabled IoT applications.
 
 The IsatData Pro Developer Kit includes a reference architecture and simple
 application that:
@@ -80,14 +82,22 @@ similar to the following iOS/Safari example:
     >NOTE: If the `isatiot` hostname does not resolve,
     try `http://192.168.27.1:5000`
 
-    <img alt="iOS Safari FEU Home page" src="../media/gui-main.png" width="50%" height="auto">
+    <img alt="iOS Safari FEU Home page" src="../media/gui-main.png" width="33%" height="auto">
 
-    >NOTE: If you have not connected the device to Internet you will not see a WiFi section and SSH login will be `pi@isatiot`
+    >NOTE: If you have not connected the device to Internet you will not see a
+    WiFi section and SSH login will be `pi@isatiot`
 
 3. Click **IDP** to navigate to the IDP tab.  Confirm you have a connection to
-the ST2100 modem.  It should appear similar to the following iOS/Safari example:
+the ST2100 modem.  It should appear similar to the following iOS/Safari example
+allowing you to:
 
-    <img alt="[iOS Safari IDP page]" src="../media/gui-idp-1.png" width="50%" height="auto">
+    * See the status and signal strength on the network
+    * See when the last location report was sent
+    * Transmit a location report
+    * Transmit a text message
+    * Read received text messages
+
+    <img alt="[iOS Safari IDP page]" src="../media/gui-idp-1.png" width="33%" height="auto">
 
 >NOTE: You can connect the FieldEdge device to the Internet on a local WiFi
 connection by navigating to the `WiFi` tab on the web GUI and entering your
