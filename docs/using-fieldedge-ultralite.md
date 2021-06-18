@@ -2,7 +2,8 @@
 
 > Note: FieldEdge Ultralite "black box" is not required to make use of the
 ST2100 modem. You can connect directly to the modem using the Developer
-Breakout cable and extension cables.
+Breakout cable and extension cables, however no messages will be automaticatlly
+generated except for the `modemRegistration`.
 
 **FieldEdge *Ultralite*** is an
 [open-source project](https://github.com/inmarsat-enterprise/fieldedge-ultralite)
@@ -69,8 +70,10 @@ The SSID password is: ***IsatIoT1!***
 
     >NOTE: You can use the QR code on the device to automatically connect.
 
-    <img alt="QR code" src="../media/wifi-qr-code.png" width="45%" height="auto">
-    <img alt="iOS attach to device WiFi" src="../media/iphone-ap-connect.png" width="45%" height="auto">
+<p align="center">
+    <img alt="QR code" src="../media/wifi-qr-code.png" width="33%" height="auto">
+    <img alt="iOS attach to device WiFi" src="../media/iphone-ap-connect.png" width="33%" height="auto">
+</p>
 
 > NOTE: If you cannot establish a connection to `isat-fe-device` try removing
 and re-applying power to the "black box".
@@ -82,7 +85,9 @@ similar to the following iOS/Safari example:
     >NOTE: If the `isatiot` hostname does not resolve,
     try `http://192.168.27.1:5000`
 
+<p align="center">
     <img alt="iOS Safari FEU Home page" src="../media/gui-main.png" width="33%" height="auto">
+</p>
 
     >NOTE: If you have not connected the device to Internet you will not see a
     WiFi section and SSH login will be `pi@isatiot`
@@ -97,7 +102,9 @@ allowing you to:
     * Transmit a text message
     * Read received text messages
 
+<p align="center">
     <img alt="[iOS Safari IDP page]" src="../media/gui-idp-1.png" width="33%" height="auto">
+</p>
 
 >NOTE: You can connect the FieldEdge device to the Internet on a local WiFi
 connection by navigating to the `WiFi` tab on the web GUI and entering your
