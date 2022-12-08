@@ -6,6 +6,6 @@
 2. You should see a list of **Return Messages** (aka *Mobile-Originated*) that
 includes a **modemRegistration** and perhaps some **periodicReport** messages.
 
-    ![Network Data](../media/network-data.png)
+    ![Network Data](./media/network-data.png)
 
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)

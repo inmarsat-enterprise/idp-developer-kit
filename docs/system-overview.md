@@ -1,6 +1,6 @@
 # IsatData Pro System Overview
 
-![System Overview](../media/idp-architecture.png)
+![System Overview](./media/idp-architecture.png)
 
 * A ***Mailbox*** provides authentication credentials for API calls to the 
 Inmarsat service, and provides access to an interest group of devices associated 
@@ -35,7 +35,7 @@ Python and running on a low cost Raspberry Pi Zero Wireless.
 IsatData Pro is a global service offered on Inmarsat's geostationary L-band
 satellites.
 
-![IDP coverage](../media/isat-data-pro-coverage.jpg)
+![IDP coverage](./media/isat-data-pro-coverage.jpg)
 
 >NOTE: Some countries may require special licensing to offer service, you
 can find out more by contacting your local Inmarsat or partner representative.
