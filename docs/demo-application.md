@@ -202,6 +202,4 @@ attached to the FieldEdge on its Wifi access point.
 
 [Return to top](#Contents) or [Return to Installation](./kit-installation.md)
 
-[Return to top](#Contents)
-
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)
