@@ -11,7 +11,8 @@ necessary.
 
 1. Collect the parts of the kit required for a vehicle install.
 
-    <img alt="Vehicle Installation Kit" src="./media/mobile-kit.png" width="75%" height="auto">
+    <img alt="Vehicle Installation Kit" src="./media/mobile-kit.png"
+    width="75%" height="auto">
 
     1. Magnet mount kit
     2. ST2100 modem
@@ -52,5 +53,5 @@ the DC automotive or AC/DC adapter cable provided
     <img alt="Breakout cable" src="./media/breakout-cable.png" width="45%" height="auto">
     <img alt="Vehicle power" src="./media/vehicle-power.png" width="45%" height="auto">
 
-[Login to the edge device](./demo-application.md#How-to-connect-to-the-Human-Machine-Interface) or
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)
+[Continue to Network Data](./network-data.md)

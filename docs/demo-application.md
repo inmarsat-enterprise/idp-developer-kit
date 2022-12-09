@@ -90,12 +90,12 @@ similar to the following iOS/Safari example:
     >NOTE: If the `fieldedge` hostname does not resolve,
     try `http://192.168.253.1` which is the Access Point gateway IP address.
 
+    >Some kits use a Raspberry Pi Zero which has limited processing resources.
+    Please be patient allowing web pages to load.
+
 <p align="center">
     <img alt="FieldEdge Home page" src="./media/gui-main.png" width="75%" height="auto">
 </p>
-
-    >Some kits use a Raspberry Pi Zero which has limited processing resources.
-    Please be patient allowing web pages to load.
 
 1. The home page provides some basic system information and a quick view of
 whether the satellite modem is connected.
@@ -200,6 +200,6 @@ server and GUI app.
 If you cannot resolve http://fieldedge then try http://192.168.253.1 while
 attached to the FieldEdge on its Wifi access point.
 
-[Return to top](#Contents) or [Return to Installation](./kit-installation.md)
+[Return to top](#Contents)
 
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)

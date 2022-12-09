@@ -41,3 +41,4 @@ satellites.
 can find out more by contacting your local Inmarsat or partner representative.
 
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)
+[Continue to Modem Activation](./modem-activation.md)

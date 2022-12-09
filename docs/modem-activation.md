@@ -33,3 +33,5 @@ completed, within a few minutes.
     width="75%" height="auto">
 
 [Back to Developer Kit Quick Start](../README.md#Getting-Started)
+[Back to System Overview](./system-overview.md)
+[Continue to Kit Installation](./kit-installation.md)

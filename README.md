@@ -50,7 +50,7 @@ straight to [Modem Activation](docs/modem-activation.md) then
 * [Modem Activation](docs/modem-activation.md)
 * [Kit Installation](docs/kit-installation.md)
 * [Network Data](docs/network-data.md)
-* [Using the Sample Application](docs/demo-application.md)
+* [Using the Demo Application](docs/demo-application.md)
 * [Next Steps](#Next-Steps)
 
 ## Next Steps
