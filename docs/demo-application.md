@@ -149,6 +149,7 @@ the developer kit **FieldEdge** platform.
 * [Cannot connect to FieldEdge access point](#cannot-connect-to-fieldedge-access-point)
 * [Cannot load FieldEdge home page](#cannot-load-fieldedge-home-page)
 * [Satellite modem not connected](#satellite-modem-not-connected)
+* [IoT Demo shows no satellite service]()
 * [Upgrading to latest version](#upgrade-to-the-latest-fieldedge-idp-version)
 
 ### Cannot connect to `FieldEdge` access point
@@ -217,6 +218,19 @@ in the direction of the equator.
 >NOTE: If you are trying to use the modem out a window, many windows have
 metallic fragments and could affect signal reception. Try to avoid using
 indoors.
+
+### Satellite IoT Demo shows No Satellite Service
+
+This situation may happen if the MQTT thread crashes for some reason, which
+will be visible with `docker logs fieldedge-idp` and identifying
+`Exception in thread MqttThread`. Usually this can be
+fixed by restarting the **fieldedge-idp** service when SSH'd into the device:
+    ```
+    ssh fieldedge@192.168.253.1
+    ```
+    ```
+    docker restart fieldedge-idp
+    ```
 
 ### Upgrade to the latest fieldedge-idp version
 
