@@ -72,7 +72,7 @@ various local microservices (IDP monitor, database, GUI and IoT demo).
 1. Using your preferred tablet/smartphone/PC, look for the WiFi network
 beginning with **`FieldEdge-<id>`** where `<id>` is a unique 4-character ID
 for the specific kit.
-The SSID password is: ***IsatIoT1!*** 
+The SSID password is: ***IsatIoT1!***
     
     An example using an iOS device is shown below:
 
@@ -80,8 +80,8 @@ The SSID password is: ***IsatIoT1!***
     <img alt="iOS attach to device WiFi" src="./media/iphone-ap-connect.png" width="33%" height="auto">
 </p>
 
-> NOTE: If you cannot establish a connection to try removing and re-applying
-power to the "black box".
+> NOTE: If you see `FieldEdge-****` instead of a unique ID, you should wait a
+few moments as the system resets its unique ID.
 See [troubleshooting](#Cannot-connect-to-`FieldEdge`-access-point).
 
 1. Open a browser and navigate to `http://fieldedge`.  It should appear
@@ -91,7 +91,7 @@ similar to the following iOS/Safari example:
     try `http://192.168.253.1` which is the Access Point gateway IP address.
 
     >Some kits use a Raspberry Pi Zero which has limited processing resources.
-    Please be patient allowing web pages to load.
+    Please be patient allowing the web pages to load.
 
 <p align="center">
     <img alt="FieldEdge Home page" src="./media/gui-main.png" width="75%" height="auto">
@@ -177,7 +177,11 @@ $ cd fieldedge && docker-compose --profile idp up -d --build
 
 ### Cannot connect to `FieldEdge` access point
 
-First try removing and re-applying power from the black box, a reboot will
+If you scan for WiFi networks and see **`FieldEdge-****`** the device needs a
+few moments to determine its unique ID and re-broadcast its unique SSID.
+
+If you do not see any FieldEdge SSID within a few minutes of powering up the
+kit, try removing and re-applying power from the black box, a reboot will
 usually fix the problem.
 
 If you still cannot attach to `FieldEdge-<id>` you can try removing the
@@ -185,20 +189,16 @@ cover of the black box and connecting a micro-USB to USB adapter
 between the Raspberry Pi and your computer to ssh locally using a terminal shell
 or a Windows application such as [PuTTY](www.putty.org).
 
-```
-ssh fieldedge@fieldedge
-```
-
 >Note: On some Linux hosts you may need to lookup the MAC address using
 `ifconfig` then use network-manager on the **Ethernet** Wired connection 
 number with matching address and select IPv4 method as `Link-Local Only`.
 
 ### Cannot load FieldEdge home page
 
-After a reboot, the Raspberry Pi may take up to 5 minutes to start the web
-server and GUI app.
+After a reboot, the Raspberry Pi (Zero) may take up to 5 minutes to start the
+FieldEdge web server and GUI app.
 If you cannot resolve http://fieldedge then try http://192.168.253.1 while
-attached to the FieldEdge on its Wifi access point.
+attached to the FieldEdge via its Wifi access point.
 
 [Return to top](#Contents)
 
