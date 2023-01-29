@@ -139,14 +139,77 @@ PC. You can then carry out upgrades to the latest app versions, see
 
 [Return to top](#Contents)
 
+<hr>
+
 ## Troubleshooting
 
 The following section includes information on known/observed behaviours of
-the developer kit *Ultralite* platform.
+the developer kit **FieldEdge** platform.
 
-### Network not showing Active
+* [Cannot connect to FieldEdge access point](#cannot-connect-to-fieldedge-access-point)
+* [Cannot load FieldEdge home page](#cannot-load-fieldedge-home-page)
+* [Satellite modem not connected](#satellite-modem-not-connected)
+* [Upgrading to latest version](#upgrade-to-the-latest-fieldedge-idp-version)
 
-If the IDP tab does not show *Network* **`Active`** then your satellite modem
+### Cannot connect to `FieldEdge` access point
+
+1. If you scan for WiFi networks and see **`FieldEdge-****`** the device needs a
+few moments to determine its unique ID and re-broadcast its unique SSID with
+the form `FieldEdge-nnnn` where *nnnn* is the unique ID.
+
+1. If you do not see any FieldEdge SSID within a few minutes of powering up the
+kit, try removing and re-applying power from the black box, a reboot will
+usually fix the problem.
+
+1. If you still cannot attach to `FieldEdge-nnnn` you can try removing the
+cover of the black box and connecting a micro-USB to USB adapter
+between the Raspberry Pi and your computer to ssh locally using a terminal shell
+or a Windows application such as [PuTTY](www.putty.org).
+
+>Note: On some Linux hosts you may need to lookup the MAC address using
+`ifconfig` then use network-manager on the **Ethernet** Wired connection 
+number with matching address and select IPv4 method as `Link-Local Only`.
+
+### Cannot load FieldEdge home page
+
+1. After a reboot, the Raspberry Pi (Zero) may take up to 5 minutes to start the
+FieldEdge web server and GUI app.
+
+1. If you cannot reach http://fieldedge then try http://192.168.253.1 while
+attached to the FieldEdge via its Wifi access point.
+
+1. If you cannot reach either URL after about 5 minutes, you can SSH to the
+device and use the following commands:
+    ```
+    ssh fieldedge@192.168.253.1
+    ```
+    ```
+    [[ "$(docker logs --tail 1 fieldedge-gui)" != *"Booting worker with pid"* ]] \
+      && echo "Booting - please wait" || echo "GUI appears to be active"
+    ```
+    If the above command does not indicate to wait, you may view the live
+    progress with the following command:
+    ```
+    docker logs --follow --tail 5 fieldedge-gui
+    ```
+    >:warning: If additional logs do not start to appear after 5 minutes
+    please contact elevate.support@inmarsat.com.
+
+### Satellite Modem Not Connected
+
+1. If the **Satellite Modem** section of the **Home** page indicates
+*Satellite modem not connected* it may be a read timout on the local database.
+First navigate to the **Satellite** tab and confirm if modem information is
+displayed. If yes, reloading the **Home** page should show an updated status.
+
+1. If the **Satellite** tab indicates there is no connection to the modem it
+is most likely that the modem cable was not properly connected when the system
+was powered up and may take some time to auto-detect. After ensuring all cables
+are properly connected, click the Retry button.
+
+### Satellite Network not showing Active
+
+If the Satellite tab does not show *Network* **`Active`** then your satellite modem
 is probably unable to see the satellite or experiencing local multipath
 interference. Try to move the modem to a location with clear view of the sky
 in the direction of the equator.
@@ -155,7 +218,7 @@ in the direction of the equator.
 metallic fragments and could affect signal reception. Try to avoid using
 indoors.
 
-### Upgrade to the latest app versions
+### Upgrade to the latest fieldedge-idp version
 
 > NOTE: for this step you will need a [GitHub Personal Access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 You will also need collaborator access to the [FieldEdge Project repositories](https://github.com/inmarsat-enterprise/projects/1).
@@ -174,31 +237,6 @@ $ cd fieldedge && docker-compose --profile idp up -d --build
 ```
 
 [Return to top](#Contents)
-
-### Cannot connect to `FieldEdge` access point
-
-If you scan for WiFi networks and see **`FieldEdge-****`** the device needs a
-few moments to determine its unique ID and re-broadcast its unique SSID.
-
-If you do not see any FieldEdge SSID within a few minutes of powering up the
-kit, try removing and re-applying power from the black box, a reboot will
-usually fix the problem.
-
-If you still cannot attach to `FieldEdge-<id>` you can try removing the
-cover of the black box and connecting a micro-USB to USB adapter
-between the Raspberry Pi and your computer to ssh locally using a terminal shell
-or a Windows application such as [PuTTY](www.putty.org).
-
->Note: On some Linux hosts you may need to lookup the MAC address using
-`ifconfig` then use network-manager on the **Ethernet** Wired connection 
-number with matching address and select IPv4 method as `Link-Local Only`.
-
-### Cannot load FieldEdge home page
-
-After a reboot, the Raspberry Pi (Zero) may take up to 5 minutes to start the
-FieldEdge web server and GUI app.
-If you cannot resolve http://fieldedge then try http://192.168.253.1 while
-attached to the FieldEdge via its Wifi access point.
 
 [Return to top](#Contents)
 
